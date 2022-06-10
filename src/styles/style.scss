@@ -1,0 +1,72 @@
+$text-color: #114de3;
+$error-color: red;
+$table-line: #eee;
+$footer-color: #000;
+$footer-background: #eee;
+
+body {
+  color: $text-color;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+input {
+  font-size: 16px;
+  margin: 5px;
+  width: 300px;
+}
+.content {
+  min-height: calc(100vh - 110px);
+}
+.footer {
+  font-size: 14Px;
+  height: 50px;
+  color:$footer-color;
+  background-color: $footer-background;
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin-top: 50px;
+}
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.header {
+  border-bottom: 2px solid green;
+  padding-bottom: 10px;
+}
+.notfound {
+  color:$error-color;
+  font-size: 16px;
+}
+
+.Table{
+  display: table;
+  width: 80%;
+  margin: auto;
+  padding-top: 50px;
+  font-size: 14px;
+}
+.TableRow {
+  display: table-row;
+}
+.TableCell{
+  border-bottom: 1px solid $table-line;
+  display: table-cell;
+  padding: 3px 10px;
+  vertical-align: top;
+}
+.TableImgCell{
+  border-bottom: 1px solid $table-line;
+  display: table-cell;
+  width: 160px;
+}
+.TableBody {
+  display: table-row-group;
+}
+.articleTitle {
+  color:#333;
+  font-size: 16px;
+}
