@@ -3,11 +3,12 @@ $error-color: red;
 $table-line: #eee;
 $footer-color: #000;
 $footer-background: #eee;
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
 
 body {
   color: $text-color;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+  font-family: 'Montserrat', sans-serif;
 }
 input {
   font-size: 16px;
