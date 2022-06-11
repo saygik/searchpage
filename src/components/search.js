@@ -2,14 +2,18 @@ import React, {useState} from "react";
 
 const SearchBar = ({searchArticles}) => {
     const [value, setValue] = useState("");
+    const [timer, setTimer]= useState(null);
 
     const handleClick = () => {
-        setValue('')
-        searchArticles('')
+        handleChange('')
     }
     const handleChange = (value) => {
         setValue(value)
-        searchArticles(value)
+        clearTimeout(timer)
+        const newTimer = setTimeout(()=>{
+            searchArticles(value)
+        },1500)
+        setTimer(newTimer)
     }
 
     return (
